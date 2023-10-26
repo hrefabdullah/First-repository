@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        :root{
+            --sec-color: rgb(149, 126, 10);
+            --bg-color: rgb(230, 224, 62);
+            --mpad: 10px;
+            --font: sans-serif;
+        }
+
+        ul{
+            display: flex;
+            position: relative;
+            left: 5vh;
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--mpad);
+        }
+
+        .nav{
+            background-color: var(--sec-color);
+        }
+
+        .container{
+            padding: var(--mpad);
+            background-color: var(--bg-color) ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Variables - css mein variable le skte hain aur phir jab chahe use kar skte hain -->
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis est deserunt dolorem ipsa repellendus optio illo facilis dolores ex ullam iure assumenda sit quisquam dignissimos quos ab iste, natus obcaecati. Nihil, est sunt? Quaerat, suscipit? Assumenda nihil ab facere velit, mollitia dolorum quaerat eum et eaque consequatur aliquam necessitatibus eos minima odio numquam repellat ullam qui rem. Molestiae dignissimos recusandae quisquam ut excepturi sed voluptate sit possimus.
+    </div>
+</body>
+</html>
